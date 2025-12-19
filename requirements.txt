@@ -1,0 +1,6 @@
+aiogram==3.7.0
+sqlalchemy==2.0.23
+alembic==1.13.1
+python-dotenv==1.0.0
+matplotlib==3.8.2
+pillow==10.1.0
