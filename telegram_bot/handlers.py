@@ -4,7 +4,7 @@ from aiogram import Router, types
 from aiogram.filters import Command
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import matplotlib.pyplot as plt
-from telegram_bot.database import get_db, create_or_update_user, add_score, get_total_score, get_top_users, clear_scores, get_user_scores_over_time
+from database import get_db, create_or_update_user, add_score, get_total_score, get_top_users, clear_scores, get_user_scores_over_time
 
 router = Router()
 logger = logging.getLogger(__name__)
