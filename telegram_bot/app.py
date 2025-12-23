@@ -2,9 +2,9 @@ import asyncio
 import logging
 from aiogram import Bot, Dispatcher
 from aiogram.types import BotCommand
-from .config import BOT_TOKEN
-from .database import create_tables
-from .handlers import router
+from telegram_bot.config import BOT_TOKEN
+from telegram_bot.database import create_tables
+from telegram_bot.handlers import router
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)

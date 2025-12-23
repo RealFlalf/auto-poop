@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine, func
 from sqlalchemy.orm import sessionmaker, Session
-from .models import Base, User, Score
-from .config import DATABASE_URL
+from telegram_bot.models import Base, User, Score
+from telegram_bot.config import DATABASE_URL
 
 engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
