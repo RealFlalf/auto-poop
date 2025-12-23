@@ -1,9 +1,0 @@
-version: '3.8'
-
-services:
-  telegram-bot:
-    build: .
-    env_file:
-      - telegram_bot/.env
-    volumes:
-      - ./telegram_bot/bot.db:/app/telegram_bot/bot.db
