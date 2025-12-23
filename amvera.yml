@@ -1,17 +1,15 @@
 ---
 version: null
 meta:
-  environment: docker
+  environment: python
   toolchain:
-    name: docker
-    version: latest
+    name: pip
+    version: 3.11
 build:
-  dockerfile: Dockerfile
-  skip: false
+  requirementsPath: requirements.txt
+  useCache: true
 run:
-  image: null
-  command: null
-  args: null
+  scriptName: telegram_bot/app.py
   persistenceMount: /data
   containerPort: 80
 serviceType: compute
